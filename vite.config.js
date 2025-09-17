@@ -8,5 +8,5 @@ export default defineConfig({
     build: {
         outDir: "build",
     },
-    base: "/daily-bite/",
+    base: "/DailyBite/",
 });

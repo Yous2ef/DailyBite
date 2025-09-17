@@ -27,7 +27,7 @@ DailyBite is a beautifully crafted, fully responsive landing page for an AI-powe
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://Yous2ef.github.io/daily-bite/)
+[View Live Demo](https://Yous2ef.github.io/DailyBite/)
 
 ## 📸 Screenshots
 
@@ -289,7 +289,6 @@ This project is licensed under the MIT License
 ## 👨‍💻 Author
 
 **Your Name** - [GitHub](https://github.com/Yous2ef) | [LinkedIn](https://www.linkedin.com/in/youssefmahmoud-yma/)
-
 
 ## 📊 Project Stats
 

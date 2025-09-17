@@ -1,8 +1,8 @@
 {
-    "name": "daily-bite",
+    "name": "DailyBite",
     "private": true,
     "version": "0.0.0",
-    "homepage": "https://Yous2ef.github.io/daily-bite/",
+    "homepage": "https://Yous2ef.github.io/DailyBite/",
     "type": "module",
     "scripts": {
         "predeploy": "npm run build",
