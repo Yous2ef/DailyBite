@@ -2,7 +2,7 @@
     "name": "daily-bite",
     "private": true,
     "version": "0.0.0",
-    "homepage": "https://mr-gre2n.github.io/daily-bite/",
+    "homepage": "https://Yous2ef.github.io/daily-bite/",
     "type": "module",
     "scripts": {
         "predeploy": "npm run build",

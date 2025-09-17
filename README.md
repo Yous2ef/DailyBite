@@ -27,7 +27,7 @@ DailyBite is a beautifully crafted, fully responsive landing page for an AI-powe
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-demo-url.com)
+[View Live Demo](https://Yous2ef.github.io/daily-bite/)
 
 ## 📸 Screenshots
 
