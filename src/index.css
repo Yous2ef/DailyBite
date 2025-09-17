@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Kufi+Arabic:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&display=swap");
+
+@import "tailwindcss";
+
+:root {
+    --primary-color: #008080;
+    --primary-hover-color: #006666; 
+    --bg-color: #e6f7f7;
+    --color-black: #222; 
+
+    /* Additional colors for consistency */
+    --white: #ffffff;
+    --light-bg: #f0fbfb;
+    --light-accent: #b2d8d8; 
+    --text-secondary: #444; 
+    --text-muted: #666; 
+    --text-light: #777;
+    --border-light: #cce5e5; 
+    --shadow-color: rgba(0, 128, 128, 0.15);
+
+    /* Enhanced design system */
+    --gradient-primary: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--primary-hover-color)
+    );
+    --shadow-soft: 0 4px 6px -1px var(--shadow-color);
+    --shadow-medium: 0 10px 15px -3px var(--shadow-color);
+    --shadow-large: 0 20px 25px -5px var(--shadow-color);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--color-black);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.bg-primary {
+    background-color: var(--bg-color);
+}
+
+.bg-gradient-primary {
+    background: var(--gradient-primary);
+}
+
+.shadow-soft {
+    box-shadow: var(--shadow-soft);
+}
+
+.shadow-medium {
+    box-shadow: var(--shadow-medium);
+}
+
+.shadow-large {
+    box-shadow: var(--shadow-large);
+}
+
+.border-primary {
+    border-color: var(--primary-color);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.padding-x {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+@layer components {
+    .max-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .nav-link {
+        color: #374151;
+        font-weight: 500;
+        font-size: 1.125rem;
+        transition: color 0.2s;
+    }
+
+    .nav-link:hover {
+        color: var(--primary-color);
+    }
+
+    .button {
+        background-color: var(--primary-color);
+        border-radius: 9px;
+        color: white;
+        padding: 0.5rem 1.75rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        min-height: 45px;
+        border: 2px solid var(--primary-color);
+        box-shadow: var(--shadow-soft);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button:hover {
+        background-color: var(--primary-hover-color);
+        border-color: var(--primary-hover-color);
+        box-shadow: var(--shadow-medium);
+        transform: translateY(-2px);
+    }
+
+    .button:active {
+        transform: translateY(0);
+        box-shadow: var(--shadow-soft);
+    }
+
+    .feature-img {
+        height: 2rem;
+        filter: brightness(0);
+        opacity: 50%;
+    }
+
+    .step-img-box {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: tomato; */
+    }
+
+    .step-img-box::before,
+    .step-img-box::after {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .step-img-box::before {
+        width: 60%;
+        height: 60%;
+        /* 60% of parent's width */
+        padding-bottom: 60%;
+
+        background-color: var(--light-bg);
+        z-index: 1;
+    }
+
+    .step-img-box::after {
+        width: 45%;
+        padding-bottom: 45%;
+        background-color: var(--light-accent);
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    html {
+        font-size: 85%;
+    }
+    .padding-x {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    html {
+        font-size: 80%;
+    }
+    .feature-img {
+        height: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 75%;
+    }
+    .feature-img {
+        height: 1rem;
+    }
+    .padding-x {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
